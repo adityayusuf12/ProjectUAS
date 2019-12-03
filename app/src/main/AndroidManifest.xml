@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="polinema.ac.id.gamingshop" >
+    package="polinema.ac.id.gamingshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="GamingShop"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".DetailHeadset3"></activity>
+        <activity android:name=".DetailHeadset2" />
+        <activity android:name=".DetailHeadset1" />
+        <activity android:name=".KursiGaming" />
+        <activity android:name=".Mouse" />
+        <activity android:name=".Keyboard" />
+        <activity android:name=".Headset" />
+        <activity android:name=".GamingGears" />
+        <activity android:name=".GameOfflineActivity.TombRaider" />
+        <activity android:name=".GameOfflineActivity.Sekiro" />
+        <activity android:name=".GameOfflineActivity.TheWitcher" />
+        <activity android:name=".GameOfflineActivity.Darksoul3" />
+        <activity android:name=".GameOfflineActivity.ResidenEvil" />
+        <activity android:name=".GameOnlineActivity.Dota" />
+        <activity android:name=".GameOnlineActivity.MonsterHunter" />
+        <activity android:name=".GameOnlineActivity.Overwatch" />
+        <activity android:name=".GameOnlineActivity.Rocket_League" />
+        <activity android:name=".GameOnlineActivity.Warframe" />
+        <activity android:name=".List_Game" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
